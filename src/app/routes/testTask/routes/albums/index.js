@@ -24,7 +24,7 @@ class Albums extends Component{
 
     formatAlbums(){
         const { albums: {dataPhotos, dataAlbums},
-            users: {dataUsers} } = this.props;
+                users: {dataUsers} } = this.props;
 
         return dataAlbums.map(album => {
             album.user = dataUsers.find(user => user.id === album.userId);

@@ -59,6 +59,7 @@
   "sidebar.testTask": "Test Task(Stanislav)",
   "sidebar.testTask.albums": "Albums",
   "sidebar.testTask.users": "Users",
+  "sidebar.testTask.photos": "Photos",
 
   "sidebar.customViews.plainListView": "Plain List View",
   "sidebar.customViews.withDivider": "Plain List with Divider",

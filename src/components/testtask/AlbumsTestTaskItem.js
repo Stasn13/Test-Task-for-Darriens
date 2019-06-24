@@ -7,7 +7,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Avatar from '@material-ui/core/Avatar';
 import IconButton from '@material-ui/core/IconButton';
 import red from '@material-ui/core/colors/red';
-import MoreVertIcon from '@material-ui/icons/MoreVert';
+import { Link } from 'react-router-dom'
 
 const styles = theme => ({
     card: {
@@ -46,7 +46,7 @@ class AlbumsTestTaskItem extends React.Component {
     };
 
     render() {
-        const { classes, title, user, photos } = this.props;
+        const { classes, title, id, user, photos } = this.props;
 
         return (
             <Card className={classes.card}>
@@ -54,11 +54,11 @@ class AlbumsTestTaskItem extends React.Component {
                     avatar={
                         <Avatar aria-label="Recipe" className={classes.avatar}>
                             {user.name[0]}
-            </Avatar>
+                        </Avatar>
                     }
                     action={
                         <IconButton>
-                            <MoreVertIcon />
+                            <Link to={`./photos/${id}`}>See Photos</Link>
                         </IconButton>
                     }
                     title={user.name}
